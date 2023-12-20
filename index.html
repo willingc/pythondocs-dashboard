@@ -7,26 +7,43 @@
     <meta name="description" content="Editiorial review of Python documentation resources">
     <meta name="author" content="Carol Willing">
 
-    <link rel="stylesheet" href="css/pico.css">
+    <!-- Pico.css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+
+    <!-- Custom styles for this example -->
+    <link rel="stylesheet" href="custom.css" />
   </head>
 
   <body>
-    <header class="container">
-        <h1>Python Documentation User Pathways</h1>
+    <!-- Hero -->
+    <div class="hero" data-theme="dark">
+      <header class="container">
+        <hgroup>
+          <h1>Python Documentation User Pathways</h1>
           <h2>Editorial review</h2>
-          <p>Guide users to documentation for Python.</p>
+        </hgroup>
+        <p>Providing effective documentation for Python's users.</p>
           <a href="https://docs.python.org" role="button">docs.python.org</a>
           <a href="https://www.python.org" role="button">python.org</a>
-    </header>
-    <main class="container">  
-      <section>
-        <h2 class="text-body-emphasis">python.org landing page</h2>
-        <p>User paths from the website's
-        <a class="icon-link mb-1" href="https://python.org" rel="noopener" target="_blank">
-          landing page
-        </a></p>
-        <div>
-          <div>
+      </header>
+    </div>
+    <!-- ./ Hero -->
+
+    <!-- Main -->
+    <main class="container">
+      <div data-theme="light">
+        <section>
+          <hgroup>
+            <h2>python.org landing page</h2>
+            <h3>Auditing the user paths</h3>
+          </hgroup>
+          <p>
+            Process: Look at the website from the eyes of a new user of Python who has no experience coding.
+            Also, look at the website from the eyes of a new user of Python who has experience coding in another language.
+          </p>
+        </section>
+        <section>
+          
           <h3>Top container</h3>
             <ul class="list-unstyled ps-0">
             <li>
@@ -43,8 +60,7 @@
               </a>
             </li>
             </ul>
-          </div>
-          <div>
+
             <h3>Middle container</h3>
             <ul class="list-unstyled ps-0">      
             <li>
@@ -63,8 +79,7 @@
               </a>
             </li>
             </ul>
-          </div>
-          <div>
+   
             <h3>Bottom navigation container</h3>  
             <ul class="list-unstyled ps-0">  
             <li>
@@ -133,8 +148,7 @@
               </a>
             </li>
             </ul>
-          </div>
-          <div>
+
             <h3>Site Footer</h3>  
             <ul>
             <li>
@@ -143,15 +157,13 @@
               </a>
             </li>
           </ul>
-          </div>
-        </div>
-        <div>
+          <article data-theme="dark">
           <h3>Observations and recommendations</h3>
           <ul>
             <li>Replace or remove links to wiki pages</li>
             <li>Review whether third party resources: books, av should be found under Documentation submenus</li>
           </ul>
-        </div>
+          </article>
       </section>
       <section>
           <h2 class="text-body-emphasis">Additional pages needing review</h2>
@@ -160,13 +172,21 @@
               python.org/doc/ 
             </li>
           </ul>
-        </div>
+
       </div>
       </section>
     </main>
-    <footer class="container">
-      Created by the Carol Willing &middot; &copy; 2023
-    </footer>
-  </body>
+    <!-- ./ Main -->
 
+
+    <!-- Footer -->
+    <footer class="container-fluid">
+      <article>
+      <small>Created by Carol Willing &middot; &copy; 2023</small> 
+    </article>
+    </footer>
+
+    <!-- ./ Footer -->
+
+  </body>
 </html>
